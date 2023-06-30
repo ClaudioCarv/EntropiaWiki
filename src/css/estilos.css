@@ -176,6 +176,7 @@ main .cartao-eikko .png{
     transform: scale(1.5);
 }
 
+
 main .cartao-rpg .tipos{
     display: flex;
     gap: 15px;
