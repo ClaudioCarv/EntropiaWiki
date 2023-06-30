@@ -4,7 +4,9 @@ const eikko = document.getElementById("eikko");
 const imagemtrocartema = document.querySelector(".imagem-botao");
 const darkstar = document.querySelector(".logo")
 const body = document.querySelector("body");
+const ludrizotxt = document.getElementById("ludrizotxt")
 let contador = 0;
+
 
 botaoeikko.addEventListener("click", function(){
     contador++;
@@ -15,6 +17,10 @@ botaoeikko.addEventListener("click", function(){
         darkstar.setAttribute("src", "./src/imagens/stardark.png");
         eikko.style.display = 'block'
         botaoAlterarTema.disabled = true;
+        ludrizotxt.textContent = "ABISMO ABISMO ABISMO ABISMO ABISMO ABISMO";
+        ludrizotxt.classList.add("abismotxt");
+        ludrizotxt.classList.add("texto");
+        
     }
 });
 

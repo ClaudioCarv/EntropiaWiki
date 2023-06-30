@@ -91,6 +91,7 @@ main .cartao-rpg{
     border-radius: 15px;
     transition: 0.2s ease-in-out;
     
+    
 }
 
 main .cartao-eikko{
@@ -154,13 +155,16 @@ main .informacoes span{
     font-size: 17px;
 }
 
-
+main .png:hover{
+    animation: go-back 0.5s infinite alternate;
+}
 main .cartao-rpg .png{
-    transform: scale(1.5);
-    
+    transform: scale(1.5);  
+    ;
 }
 
 main .cartao-eikko .png{
+    animation: go-back 1.5s infinite alternate;
     transform: scale(1.5);
 }
 
@@ -277,4 +281,34 @@ main .descricao{
 
 #eikko {
     display: none;
+}
+.abismotxt{
+    color: #af037c;
+    animation: falha 2.3s;
+    animation-fill-mode: forwards;
+}
+.texto:hover {
+    animation: falha 1.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes falha {
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+@keyframes go-back {
+    from {
+     transform: scale(1.5);
+    }
+    to {
+      transform: translateX(0);
+    }
 }
