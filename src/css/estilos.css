@@ -3,17 +3,19 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #0c020cde;
+    background-color: #020102de;
     color: #333333;
 }
 
 body.modo-escuro{
+
     background-color: #1a1818;
     color: #f5f5f5;
 }
 
 body.modo-eikko{
     background-color: #000000;
+    
     color: #dfdada;
 }
 
@@ -109,6 +111,13 @@ main .cartao-eikko{
 
 main .cartao-rpg:hover{
     background-color: #96d9d6;
+    -webkit-box-shadow: 1px 1px 20px #20232e,
+                    -1px -1px 20px #545b78;
+   box-shadow: 2px 1px 20px #20232e,
+             -1px -1px 20px #545b78;
+   color: #1f1d1d;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 main .cartao-eikko:hover{
@@ -160,7 +169,6 @@ main .png:hover{
 }
 main .cartao-rpg .png{
     transform: scale(1.5);  
-    ;
 }
 
 main .cartao-eikko .png{
@@ -283,24 +291,33 @@ main .descricao{
     display: none;
 }
 .abismotxt{
-    color: #af037c;
+    color: #6d165a;
     animation: falha 2.3s;
-    animation-fill-mode: forwards;
-}
-.texto:hover {
-    animation: falha 1.3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
 }
 
 @keyframes falha {
     from {
         margin-left: 100%;
+        
         width: 300%
       }
     
       to {
         margin-left: 0%;
         width: 100%;
+      }
+      0% {
+        color: rgb(13, 179, 41);
+      }
+      50% {
+        color: rgb(20, 65, 214);
+      }
+      70%{
+          color: #af037c;
+      }
+      100% {
+        color:#6d165a;
       }
     }
 
