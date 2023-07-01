@@ -39,6 +39,17 @@ body{
     cursor: pointer;    
   }
   
+
+  #inicio {
+    width: 100%; /* O botão ocupará a largura completa do elemento pai por padrão */
+   }
+
+  @media (min-width: 768px) {
+    /* Quando a tela tiver uma largura mínima de 768 pixels, o botão terá uma largura fixa */
+    #inicio {
+      width: 200px;
+    }
+  }
   .star-1 {
     position: absolute;
     top: 20%;
@@ -567,13 +578,4 @@ animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinit
   }
 
 
-  #button {
-    width: 100%; /* O botão ocupará a largura completa do elemento pai por padrão */
-   }
-   
-  @media (min-width: 768px) {
-    /* Quando a tela tiver uma largura mínima de 768 pixels, o botão terá uma largura fixa */
-    #inicio {
-      width: 200px;
-    }
-  }
+  
