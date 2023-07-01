@@ -7,6 +7,154 @@ body{
     color: #0e0d0d;
 }
 
+.linhah{
+    border-radius: 50%;
+    border-top: 3px solid rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    transition: 1.5s ease-in-out;
+}
+
+.modo-eikko .linhah{
+    border-radius: 50%;
+    border-top: 3px solid rgb(18, 1, 29);
+    margin: 0;
+    padding: 0;
+    transition: 3.5s ease-in-out;
+}
+
+#inicio {
+    position: relative;
+    right: 470px;
+    padding: 12px 35px;
+    background: #791c96;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    color: #e0dada;
+    border: 3px  #131212;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #8a87848c;
+    transition: all .3s ease-in-out;
+    cursor: pointer;    
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  #inicio:hover {
+    background: #96d9d6;
+    color: #161515;
+    box-shadow: 0 0 25px #ebe8e5ec;
+  }
+  
+  #inicio:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #inicio:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #inicio:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #inicio:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #FFFDEF
+  }
+
 body.modo-escuro{
 
     background-color: #1a1818;
@@ -21,6 +169,7 @@ body.modo-eikko{
 
 body.modo-eikko .cartao-eikko{
     color: #49183e;
+    animation: bouncing 0.5s ease-in-out alternate infinite
 }
 
 header{
@@ -39,14 +188,14 @@ header #botao-alterar-tema{
     background: none;
     border: none;
     cursor: pointer;
-    
+    animation: bouncing 1s ease-in-out alternate infinite
 }
 
 header #botaoeikko{
     background: none;
     border: none;
     cursor: pointer;
-    
+    animation: bouncing 1s ease-in-out alternate infinite;
 }
 
 main .cartao-rpg:hover{
@@ -68,6 +217,7 @@ header #botao-alterar-tema:hover{
     transform: scale(2.0);
     cursor: pointer;
     transition: 0.5s ease-in-out;
+    
 }
 
 main{
@@ -91,9 +241,8 @@ main .cartao-rpg{
     align-items: center;
     gap: 15px;
     border-radius: 15px;
-    transition: 0.2s ease-in-out;
-    
-    
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 }
 
 main .cartao-eikko{
@@ -118,6 +267,7 @@ main .cartao-rpg:hover{
    color: #1f1d1d;
   -webkit-transition: 500ms;
   transition: 500ms;
+  
 }
 
 main .cartao-eikko:hover{
@@ -132,6 +282,7 @@ main .cartao-eikko:hover{
 }
 
 .modo-eikko .cartao-rpg{
+    animation: bouncing 0.5s ease-in-out alternate infinite;
     background-color: #1b1a1b;
 }
 
@@ -156,6 +307,7 @@ main .cartao-rpg span{
     padding: 5px;
     text-transform: uppercase;
     font-size: 17px;
+    
 }
 
 main .informacoes span{
@@ -168,7 +320,7 @@ main .png:hover{
     animation: go-back 0.5s infinite alternate;
 }
 main .cartao-rpg .png{
-    transform: scale(1.5);  
+    transform: scale(1.5); 
 }
 
 main .cartao-eikko .png{
@@ -325,6 +477,24 @@ animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinit
     color: #00e571;
     z-index: -2;
 }
+
+@keyframes bouncing{
+    to{
+        transform:  translateY(5px);
+    }
+}
+
+@keyframes aparecer {
+    from {
+      opacity: 0; /* Opacidade inicial do botão */
+      transform: translateY(-50px); /* Desloca o botão 50 pixels para cima */
+    }
+    to {
+      opacity: 1; /* Opacidade final do botão */
+      transform: translateY(0); /* Retorna o botão à sua posição original */
+    }
+  }
+
 
 @keyframes falha {
     from {

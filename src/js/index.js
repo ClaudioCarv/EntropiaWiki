@@ -26,6 +26,10 @@ const element8 = document.getElementById("abismado8")
 const element9 = document.getElementById("abismado9")
 const element10 = document.getElementById("abismado10")
 const element11 = document.getElementById("abismado11")
+const page = document.getElementById("page")
+const elementos = document.getElementById("inicio")
+const eiko = document.getElementById("eiko")
+const soundabismo = document.getElementById("abismosound")
 let contador = 0;
 
 
@@ -100,4 +104,8 @@ botaoAlterarTema.addEventListener("click", () => {
 })
 
 
-
+eiko.addEventListener("click", function(){
+    const eiku = "./src/imagens/eikkoimg.png";
+    soundabismo.play();
+    window.open(eiku);
+})
